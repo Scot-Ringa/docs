@@ -18,7 +18,7 @@ topics:
 
 ## Configuring access to {% data variables.product.prodname_copilot %} in your organization
 
-{% ifversion ghec %}After a {% data variables.product.prodname_dotcom %} enterprise owner enables {% data variables.product.prodname_copilot_enterprise_short %} or {% data variables.product.prodname_copilot_business_short %} for an organization, an owner of that organization can grant {% data variables.product.prodname_copilot %} access to members of their organization.{% else %}After setting up a {% data variables.product.prodname_copilot_business_short %} subscription, an organization owner grant {% data variables.product.prodname_copilot %} access to members of their organization.{% endif %}
+{% ifversion ghec %}After a {% data variables.product.prodname_dotcom %} enterprise owner enables {% data variables.product.prodname_copilot_enterprise_short %} or {% data variables.product.prodname_copilot_business_short %} for an organization, an owner of that organization can grant {% data variables.product.prodname_copilot %} access to members of their organization.{% else %}After setting up a {% data variables.product.prodname_copilot_business_short %} subscription, an organization owner can grant {% data variables.product.prodname_copilot %} access to members of their organization.{% endif %}
 
 Billing for {% data variables.product.prodname_copilot %} starts when you grant an organization member access, irrespective of when they first use {% data variables.product.prodname_copilot_short %}. If you grant an organization member access midway through a billing cycle, the cost is prorated for the remainder of the cycle. For more information, see [AUTOTITLE](/billing/managing-billing-for-github-copilot/about-billing-for-github-copilot).
 
@@ -77,6 +77,8 @@ Billing for {% data variables.product.prodname_copilot %} starts when you grant 
 ## Using the API to grant access to {% data variables.product.prodname_copilot %}
 
 You can use {% data variables.product.prodname_dotcom %}'s REST API to grant access to {% data variables.product.prodname_copilot %} for teams, or specific users, in your organization. See [Add teams to the Copilot subscription for an organization](/rest/copilot/copilot-user-management?apiVersion=2022-11-28#add-teams-to-the-copilot-subscription-for-an-organization) and [Add users to the Copilot subscription for an organization](/rest/copilot/copilot-user-management?apiVersion=2022-11-28#add-users-to-the-copilot-subscription-for-an-organization).
+
+{% data reusables.copilot.self-serve-license-link %}
 
 ## Further reading
 

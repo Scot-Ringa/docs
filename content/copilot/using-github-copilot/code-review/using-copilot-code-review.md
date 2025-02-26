@@ -14,12 +14,7 @@ redirect_from:
   - /early-access/copilot/code-reviews/using-copilot-code-reviews
 ---
 
-> [!NOTE]
->
-> * {% data variables.copilot.copilot_code-review %} is in {% data variables.release-phases.public_preview %} and subject to change.
-> * To participate in the {% data variables.release-phases.public_preview %}, an administrator of your {% ifversion ghec %}enterprise or{% endif %} organization must opt in to the use of previews of {% data variables.product.prodname_copilot_short %} features. See {% ifversion ghec %}[AUTOTITLE](/copilot/managing-copilot/managing-copilot-for-your-enterprise/managing-policies-and-features-for-copilot-in-your-enterprise#copilot-in-githubcom) and{% endif %} [AUTOTITLE](/copilot/managing-copilot/managing-github-copilot-in-your-organization/managing-policies-for-copilot-in-your-organization#enabling-copilot-features-in-your-organization).
-> * Some functionality is available to all enabled {% data variables.product.prodname_copilot_short %} subscribers, but other functionality is only available to a limited number of users. To join the waitlist for additional functionality, see [Join the {% data variables.copilot.copilot_code-review_short %} waitlist](https://gh.io/copilot-code-review-waitlist).
-> * The [AUTOTITLE](/free-pro-team@latest/site-policy/github-terms/github-pre-release-license-terms) apply to your use of this product.
+{% data reusables.copilot.code-review.preview-note %}
 
 ## About {% data variables.copilot.copilot_code-review_short %}
 
@@ -116,8 +111,6 @@ To turn this on, enable the **Request pull request review from {% data variables
 ## Customizing {% data variables.product.prodname_copilot_short %}'s reviews with coding guidelines
 
 {% data reusables.copilot.code-review.custom-coding-guidelines %}
-
-![Screenshot of a comment produced from a custom coding guideline.](/assets/images/help/copilot/code-review/coding-guidelines-comment@2x.png)
 
 {% endwebui %}
 

@@ -25,7 +25,7 @@ This quickstart guide walks you through setting up and enabling {% data variable
 ## Prerequisites
 
 {% ifversion ghes %}
-Before you can use the {% data variables.product.prodname_dependabot_alerts %} feature in {% data variables.product.product_name %}, you must ensure that your enterprise administrator enables {% data variables.product.prodname_dependabot %} for the instance. For more information, see [AUTOTITLE](/admin/configuration/configuring-github-connect/enabling-dependabot-for-your-enterprise#enabling-dependabot-alerts).
+Before you can use the {% data variables.product.prodname_dependabot_alerts %} feature in {% data variables.product.github %}, you must ensure that your enterprise administrator enables {% data variables.product.prodname_dependabot %} for the instance. For more information, see [AUTOTITLE](/admin/configuration/configuring-github-connect/enabling-dependabot-for-your-enterprise#enabling-dependabot-alerts).
 {% endif %}
 
 For the purpose of this guide, we're going to use a demo repository to illustrate how {% data variables.product.prodname_dependabot %} finds vulnerabilities in dependencies, where you can see {% data variables.product.prodname_dependabot_alerts %} on {% data variables.product.prodname_dotcom %}, and how you can explore, fix, or dismiss these alerts.
@@ -63,7 +63,7 @@ If {% data variables.product.prodname_dependabot_alerts %} are enabled for a rep
 
    ![Screenshot showing the list of Dependabot alerts for the demo repository.](/assets/images/help/repository/dependabot-alerts-list-demo-repo.png)
 
-   You can filter {% data variables.product.prodname_dependabot_alerts %} in the list, using a variety of filters or labels. For more information, see [AUTOTITLE](/code-security/dependabot/dependabot-alerts/viewing-and-updating-dependabot-alerts#prioritizing-dependabot-alerts).{% ifversion dependabot-auto-triage-rules %} You can also use {% data variables.dependabot.auto_triage_rules %} to filter out false positive alerts or alerts you're not interested in. For more information, see [AUTOTITLE](/code-security/dependabot/dependabot-auto-triage-rules/about-dependabot-auto-triage-rules).{% endif %}
+   You can filter {% data variables.product.prodname_dependabot_alerts %} in the list, using a variety of filters or labels. For more information, see [AUTOTITLE](/code-security/dependabot/dependabot-alerts/viewing-and-updating-dependabot-alerts#prioritizing-dependabot-alerts). You can also use {% data variables.dependabot.auto_triage_rules %} to filter out false positive alerts or alerts you're not interested in. For more information, see [AUTOTITLE](/code-security/dependabot/dependabot-auto-triage-rules/about-dependabot-auto-triage-rules).
 
 1. Click the "Command Injection in lodash" alert on the `javascript/package-lock.json` file. The details page for the alert will show the following information (note that some information may not apply to all alerts):
    * Whether {% data variables.product.prodname_dependabot %} created a pull request that will fix the vulnerability. You can review the suggested security update by clicking **Review security update**.
