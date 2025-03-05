@@ -3,7 +3,9 @@ title: Contents of a GitHub Docs article
 shortTitle: Contents of an article
 intro: 'Every article includes a few standard elements, and may include conditional or optional elements. We also use a standard order for content within an article.'
 versions:
-  feature: 'contributing'
+  fpt: '*'
+  ghec: '*'
+  ghes: '*'
 ---
 
 ## About the structure of an article
@@ -185,6 +187,6 @@ Format further reading sections using unordered lists. See [AUTOTITLE](/contribu
 
 ```markdown
 ## Further reading
-- "[Article title](article-URL)"
+- [Article title](article-URL)
 - [External resource title](external-resource-URL) in External Resource Name
 ```

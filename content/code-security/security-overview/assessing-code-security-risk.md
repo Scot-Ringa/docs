@@ -7,7 +7,8 @@ permissions: '{% data reusables.permissions.security-overview %}'
 type: how_to
 topics:
   - Security overview
-  - Advanced Security
+  - Code Security
+  - Secret Protection
   - Alerts
   - Organizations
   - Teams
@@ -18,7 +19,7 @@ redirect_from:
   - /code-security/security-overview/viewing-the-security-overview
 ---
 
-{% data reusables.security-overview.beta-org-risk-coverage %}
+
 
 ## Exploring the security risks in your code
 

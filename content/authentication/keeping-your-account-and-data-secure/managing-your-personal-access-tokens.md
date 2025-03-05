@@ -25,7 +25,7 @@ topics:
 
 ## About {% data variables.product.pat_generic %}s
 
-{% data variables.product.pat_generic_caps %}s are an alternative to using passwords for authentication to {% data variables.product.product_name %} when using the [{% data variables.product.prodname_dotcom %} API](/rest/overview/authenticating-to-the-rest-api) or the [command line](#using-a-personal-access-token-on-the-command-line).
+{% data variables.product.pat_generic_caps %}s are an alternative to using passwords for authentication to {% data variables.product.github %} when using the [{% data variables.product.github %} API](/rest/overview/authenticating-to-the-rest-api) or the [command line](#using-a-personal-access-token-on-the-command-line).
 
 {% data variables.product.pat_generic_caps %}s are intended to access {% data variables.product.company_short %} resources on behalf of yourself. To access resources on behalf of an organization, or for long-lived integrations, you should use a {% data variables.product.prodname_github_app %}. For more information, see [AUTOTITLE](/apps/creating-github-apps/setting-up-a-github-app/about-creating-github-apps).
 
@@ -139,11 +139,11 @@ Username: YOUR-USERNAME
 Password: YOUR-PERSONAL-ACCESS-TOKEN
 ```
 
-{% data variables.product.pat_generic_caps %}s can only be used for HTTPS Git operations. If your repository uses an SSH remote URL, you will need to [switch the remote from SSH to HTTPS](/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-ssh-to-https).
+{% data variables.product.pat_generic_caps %}s can only be used for HTTPS Git operations. If your repository uses an SSH remote URL, you will need to [switch the remote from SSH to HTTPS](/get-started/git-basics/managing-remote-repositories#switching-remote-urls-from-ssh-to-https).
 
-If you are not prompted for your username and password, your credentials may be cached on your computer. You can [update your credentials in the Keychain](/get-started/getting-started-with-git/updating-credentials-from-the-macos-keychain) to replace your old password with the token.
+If you are not prompted for your username and password, your credentials may be cached on your computer. You can [update your credentials in the Keychain](/get-started/git-basics/updating-credentials-from-the-macos-keychain) to replace your old password with the token.
 
-Instead of manually entering your {% data variables.product.pat_generic %} for every HTTPS Git operation, you can cache your {% data variables.product.pat_generic %} with a Git client. Git will temporarily store your credentials in memory until an expiry interval has passed. You can also store the token in a plain text file that Git can read before every request. For more information, see [AUTOTITLE](/get-started/getting-started-with-git/caching-your-github-credentials-in-git).
+Instead of manually entering your {% data variables.product.pat_generic %} for every HTTPS Git operation, you can cache your {% data variables.product.pat_generic %} with a Git client. Git will temporarily store your credentials in memory until an expiry interval has passed. You can also store the token in a plain text file that Git can read before every request. For more information, see [AUTOTITLE](/get-started/git-basics/caching-your-github-credentials-in-git).
 
 ## Further reading
 
