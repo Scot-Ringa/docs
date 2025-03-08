@@ -37,7 +37,7 @@ These are some of the common artifacts that you can upload:
 
 {% ifversion fpt or ghec %}
 
-Storing artifacts uses storage space on {% data variables.product.product_name %}. {% data reusables.actions.actions-billing %} For more information, see [AUTOTITLE](/billing/managing-billing-for-github-actions).
+Storing artifacts uses storage space on {% data variables.product.github %}. {% data reusables.actions.actions-billing %} For more information, see [AUTOTITLE](/billing/managing-billing-for-github-actions).
 
 {% else %}
 
@@ -45,9 +45,9 @@ Artifacts consume storage space on the external blob storage that is configured 
 
 {% endif %}
 
-Artifacts are uploaded during a workflow run, and you can view an artifact's name and size in the UI. When an artifact is downloaded using the {% data variables.product.product_name %} UI, all files that were individually uploaded as part of the artifact get zipped together into a single file. This means that billing is calculated based on the size of the uploaded artifact and not the size of the zip file.
+Artifacts are uploaded during a workflow run, and you can view an artifact's name and size in the UI. When an artifact is downloaded using the {% data variables.product.github %} UI, all files that were individually uploaded as part of the artifact get zipped together into a single file. This means that billing is calculated based on the size of the uploaded artifact and not the size of the zip file.
 
-{% data variables.product.product_name %} provides two actions that you can use to upload and download build artifacts. For more information, see the {% ifversion fpt or ghec %}[upload-artifact](https://github.com/actions/upload-artifact) and [download-artifact](https://github.com/actions/download-artifact) actions{% else %} `upload-artifact` and `download-artifact` actions on {% data variables.product.prodname_ghe_server %}{% endif %}.
+{% data variables.product.github %} provides two actions that you can use to upload and download build artifacts. For more information, see the {% ifversion fpt or ghec %}[upload-artifact](https://github.com/actions/upload-artifact) and [download-artifact](https://github.com/actions/download-artifact) actions{% else %} `upload-artifact` and `download-artifact` actions on {% data variables.product.prodname_ghe_server %}{% endif %}.
 
 To share data between jobs:
 
@@ -156,7 +156,8 @@ After a workflow run has been completed, you can download or delete artifacts on
 The [`actions/download-artifact`](https://github.com/actions/download-artifact) action can be used to download previously uploaded artifacts during a workflow run.
 
 > [!NOTE]
-> You can only download artifacts in a workflow that were uploaded during the same workflow run.
+> {% ifversion fpt or ghec %}If you want to download artifacts from a different workflow or workflow run, you need to supply a token and run identifier. See [Download Artifacts from other Workflow Runs or Repositories](https://github.com/actions/download-artifact?tab=readme-ov-file#download-artifacts-from-other-workflow-runs-or-repositories) in the documentation for the `download-artifact` action.
+{% elsif ghes %}You can only download artifacts in a workflow that were uploaded during the same workflow run.{% endif %}
 
 Specify an artifact's name to download an individual artifact. If you uploaded an artifact without specifying a name, the default name is `artifact`.
 
